@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "menuMatematic_ArturShakirov_PereRipoll/1.0.0": {
+        "runtime": {
+          "menuMatematic_ArturShakirov_PereRipoll.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "menuMatematic_ArturShakirov_PereRipoll/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
