@@ -19,7 +19,15 @@ do
             Capcelera();
             num1 = DemenarPrimerNumero();
             num2 = DemenarSegonNumero();
-            Console.Write(Maxim(num1, num2));
+            Console.Write("El més gran entre els dos números és " + Maxim(num1, num2));
+            Contador();
+            break;
+        case 2:
+            Console.Clear();
+            Capcelera();
+            num1 = DemenarPrimerNumero();
+            num2 = DemenarSegonNumero();
+            Console.Write("El màxim comú divisor és " + Mcm(num1, num2));
             Contador();
             break;
     }
@@ -50,7 +58,7 @@ do
     static int DemenarPrimerNumero()
     {
         int num1;
-        Console.Write("\nIndica valor del primer número:");
+        Console.Write("\nIndica el valor del primer número: ");
         num1 = Convert.ToInt32(Console.ReadLine());
 
         return num1;
@@ -59,7 +67,7 @@ do
     static int DemenarSegonNumero()
     {
         int num2;
-        Console.Write("\nIndica valor del segon número: ");
+        Console.Write("\nIndica el valor del segon número: ");
         num2 = Convert.ToInt32(Console.ReadLine());
 
         return num2;
@@ -79,15 +87,24 @@ do
         return num1;
     }
 
+    static int Mcm(int num1, int num2)
+    {
+        int mcm;
+
+        Maxim(num1, num2);
+        return num1;
+    }
+
     static void Contador()
     {
-        int contador = 5;
+        int contador = 4;
 
         Console.WriteLine("\n");
+        Console.Write("Temps per tornar al menú: 5\r");
         while (contador >= 0)
         {
             Thread.Sleep(1000);
-            Console.Write("Time remaining: " + contador + "\r");
+            Console.Write("Temps per tornar al menú: " + contador + "\r");
             contador--;
         }
     }
