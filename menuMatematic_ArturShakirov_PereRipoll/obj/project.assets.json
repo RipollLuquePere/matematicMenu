@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\ArturSh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\informatica\\DAW1\\programacio\\programacions\\menuMatematic_ArturShakirov_PereRipoll\\matematicMenu\\menuMatematic_ArturShakirov_PereRipoll\\menuMatematic_ArturShakirov_PereRipoll.csproj",
+      "projectUniqueName": "C:\\Users\\ArturSh\\MenuMatematic-Git\\matematicMenu\\matematicMenu\\menuMatematic_ArturShakirov_PereRipoll\\menuMatematic_ArturShakirov_PereRipoll.csproj",
       "projectName": "menuMatematic_ArturShakirov_PereRipoll",
-      "projectPath": "C:\\informatica\\DAW1\\programacio\\programacions\\menuMatematic_ArturShakirov_PereRipoll\\matematicMenu\\menuMatematic_ArturShakirov_PereRipoll\\menuMatematic_ArturShakirov_PereRipoll.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\informatica\\DAW1\\programacio\\programacions\\menuMatematic_ArturShakirov_PereRipoll\\matematicMenu\\menuMatematic_ArturShakirov_PereRipoll\\obj\\",
+      "projectPath": "C:\\Users\\ArturSh\\MenuMatematic-Git\\matematicMenu\\matematicMenu\\menuMatematic_ArturShakirov_PereRipoll\\menuMatematic_ArturShakirov_PereRipoll.csproj",
+      "packagesPath": "C:\\Users\\ArturSh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ArturSh\\MenuMatematic-Git\\matematicMenu\\matematicMenu\\menuMatematic_ArturShakirov_PereRipoll\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ArturSh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
