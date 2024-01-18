@@ -7,7 +7,7 @@ do
     Menu();
 
     Console.Write("\n\nIntrodueix una opció: ");
-    opcio = Convert.ToInt32(Console.ReadLine());
+    opcio = Convert.ToInt32(Console.ReadKey());
 
     switch (opcio)
     {
@@ -27,7 +27,22 @@ do
             Capcelera();
             num1 = DemenarPrimerNumero();
             num2 = DemenarSegonNumero();
-            Console.Write("El màxim comú divisor és " + Mcm(num1, num2));
+            Console.Write(Mcm(num1, num2));
+            Contador();
+            break;
+        case 3:
+            Console.Clear();
+            Capcelera();
+            num1 = DemenarPrimerNumero();
+            num2 = DemenarSegonNumero();
+            Console.Write(Mcd(num1, num2));
+            Contador();
+            break;
+        case 4:
+            Console.Clear();
+            Capcelera();
+            num1 = DemenarPrimerNumero();
+            Console.Write(Factorial(num1));
             Contador();
             break;
     }
@@ -36,8 +51,8 @@ do
     {
         Capcelera();
         Console.WriteLine("*    1. Màxim de dos números      *");
-        Console.WriteLine("*    2. Màxim comú divisor        *");
-        Console.WriteLine("*    3. Mínim comú divisor        *");
+        Console.WriteLine("*    2. Mínim comú multiple       *");
+        Console.WriteLine("*    3. Màxim comú divisor        *");
         Console.WriteLine("*    4. Factorial                 *");
         Console.WriteLine("*    5. Combinatori               *");
         Console.WriteLine("*    6. Mostrar major divisor     *");
@@ -87,12 +102,52 @@ do
         return num1;
     }
 
-    static int Mcm(int num1, int num2)
+    static string Mcm(int num1, int num2)
     {
-        int mcm;
+        int mcm = 0, contador; 
+        string resultat = "Mínim comú multiple: ";
 
-        Maxim(num1, num2);
-        return num1;
+        contador = num1 * num2;
+
+        while (contador >= num1 && contador >= num2)
+        {
+            if (contador % num1 == 0 && contador % num2 == 0)
+                mcm = contador;
+
+            contador--;
+        }
+
+        return resultat + mcm;
+    }
+
+    static string Factorial(int num1)
+    {
+        int factorial = 1;
+        string resultat = "Factorial: ";
+
+        while (num1 > 0)
+        {
+            factorial = factorial * num1;
+            num1--;
+        }
+
+        return resultat + factorial;
+    }
+
+    static string Mcd(int num1, int num2)
+    {
+        int contador = 1, mcd = 0;
+        string resultat = "Màxim comú divisor: ";
+
+        while (contador <= num1 && contador <= num2)
+        {
+            if (num1 % contador == 0 && num2 % contador == 0)
+                mcd = contador;
+
+            contador++;
+        }
+
+        return resultat + mcd;
     }
 
     static void Contador()
