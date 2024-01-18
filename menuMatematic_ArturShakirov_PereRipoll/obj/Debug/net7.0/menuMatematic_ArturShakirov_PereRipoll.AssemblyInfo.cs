@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("menuMatematic_ArturShakirov_PereRipoll")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81e34118d006cfcbdff1d5d9966754b9f2d770e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05dd7ab80a70206e3bcd1a2bfb0456c75c870117")]
 [assembly: System.Reflection.AssemblyProductAttribute("menuMatematic_ArturShakirov_PereRipoll")]
 [assembly: System.Reflection.AssemblyTitleAttribute("menuMatematic_ArturShakirov_PereRipoll")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
