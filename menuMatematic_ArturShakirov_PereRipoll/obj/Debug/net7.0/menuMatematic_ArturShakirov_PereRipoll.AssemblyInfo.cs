@@ -15,10 +15,14 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4994110a803630b2138caf023ffe70186abf254c")]
 >>>>>>> main
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dda21529f99bcb3270689fe56b3cfa1d817264cb")]
+>>>>>>> d1d27a493a7fb3dff7f7e500477e51c86335c6d1
 [assembly: System.Reflection.AssemblyProductAttribute("menuMatematic_ArturShakirov_PereRipoll")]
 [assembly: System.Reflection.AssemblyTitleAttribute("menuMatematic_ArturShakirov_PereRipoll")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
