@@ -8,14 +8,9 @@ do
     Console.Clear();
     Console.WriteLine(Menu());
 
-<<<<<<< HEAD
-    Console.Write("\n\nIntrodueix una opció: ");
-    opcio = Convert.ToInt32(Console.ReadLine());
-=======
     Console.WriteLine("────────────────────");
     Console.Write("Introdueix una opció: ");
     opcio = Console.ReadKey().KeyChar;
->>>>>>> aa4b2b3d9855a139ae7bee8010dc193a7c4bed63
 
     switch (opcio)
     {
@@ -61,18 +56,6 @@ do
             Console.Write(Factorial(num1));
             Contador();
             break;
-<<<<<<< HEAD
-        case 5:
-            Console.Clear();
-            Capcelera();
-            num1 = DemenarPrimerNumero();
-            Console.Write(Combinatori(num1));
-            Contador();
-            break;
-        case 6:
-            Console.Clear();
-            Capcelera();
-=======
         case '5':
             textOpcio = "Combinatori";
             Console.Clear();
@@ -88,37 +71,24 @@ do
             Console.Clear();
             Console.WriteLine(Capcelera());
             Console.WriteLine(CapceleraOpcio(textOpcio));
->>>>>>> aa4b2b3d9855a139ae7bee8010dc193a7c4bed63
             num1 = DemenarPrimerNumero();
             Console.Write(MajorDivisor(num1));
             Contador();
             break;
-<<<<<<< HEAD
-        case 7:
-            Console.Clear();
-            Capcelera();
-=======
         case '7':
             textOpcio = "Validar núm. primer";
             Console.Clear();
             Console.WriteLine(Capcelera());
             Console.WriteLine(CapceleraOpcio(textOpcio));
->>>>>>> aa4b2b3d9855a139ae7bee8010dc193a7c4bed63
             num1 = DemenarPrimerNumero();
             Console.Write(NumPrimer(num1));
             Contador();
             break;
-<<<<<<< HEAD
-        case 8:
-            Console.Clear();
-            Capcelera();
-=======
         case '8':
             textOpcio = "N. primers primers";
             Console.Clear();
             Console.WriteLine(Capcelera());
             Console.WriteLine(CapceleraOpcio(textOpcio));
->>>>>>> aa4b2b3d9855a139ae7bee8010dc193a7c4bed63
             num1 = DemenarPrimerNumero();
             Console.Write(NPrimers(num1));
             Contador();
@@ -151,7 +121,7 @@ do
                "║     ----------------------     ║\n" +
                "║     \x1b[31m0. SORTIR\x1b[30m                  ║\n" +
                "║                                ║\n" +
-               "╚════════════════════════════════╝\n\x1b[0m" ;
+               "╚════════════════════════════════╝\n\x1b[0m";
 
 
         return menu;
@@ -234,7 +204,7 @@ do
 
     static string Mcm(int num1, int num2)
     {
-        int mcm = 0, contador; 
+        int mcm = 0, contador;
         string resultat = "\nMínim comú multiple: ";
 
         contador = num1 * num2;
@@ -354,65 +324,6 @@ do
         string resposta = "\nCombinatori: ";
         combinatori = Math.Round(FactorialPerCombinatori(num1) / (FactorialPerCombinatori(num2) * FactorialPerCombinatori(num1 - num2)), 2);
         return resposta + combinatori;
-    }
-
-    static string NPrimers(int num1)
-    {
-        int contPrimers = 0;
-        bool primer = true;
-        string resposta = "Primers: ";
-        for (int i = 1; contPrimers < num1; i++)
-        {
-            for (int z = 2; z < i && primer; z++)
-            {
-                if (i % z == 0)
-                    primer = false;
-            }
-            if (primer)
-            {
-                Console.WriteLine(i);
-                resposta = resposta + i + "/";
-                contPrimers++;
-            }
-            primer = true;
-        }
-        return resposta;
-    }
-    static string NumPrimer(int num1)
-    {
-        bool primer = true;
-        string resposta;
-        for (int i = 2; i < num1 && primer; i++)
-        {
-            if (num1 % i == 0)
-                primer = false;
-        }
-        if (primer) resposta = "El nombre introduit SI QUE ES un nombre primer.";
-        else resposta = "EL nombre introduit NO ES un nombre primer.";
-        return resposta;
-    }
-    static string MajorDivisor(int num1)
-    {
-        string resposta = "El major divisor del nombre introduit es: ";
-        int majorDivisor = 0;
-        for (int i = num1 - 1; i > 1 && majorDivisor == 0; i--)
-        {
-            if (num1 % i == 0)
-            {
-                majorDivisor = i;
-                resposta = resposta + i;
-            }
-        }
-        return resposta;
-    }
-    static int Combinatori(int num1)
-    {
-        int combinatori = 1;
-        for (int cont = 1; cont <= num1; cont++)
-        {
-            combinatori = combinatori * cont;
-        }
-        return combinatori;
     }
 
 } while (!sortir);
