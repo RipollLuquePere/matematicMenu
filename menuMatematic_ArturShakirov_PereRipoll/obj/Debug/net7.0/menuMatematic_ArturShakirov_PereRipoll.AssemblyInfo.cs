@@ -17,6 +17,7 @@ using System.Reflection;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4994110a803630b2138caf023ffe70186abf254c")]
@@ -27,6 +28,9 @@ using System.Reflection;
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dda21529f99bcb3270689fe56b3cfa1d817264cb")]
 >>>>>>> 5628239c8d46f29cf66c7f80383a9f034d5621d1
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4720912205595ea924316dec0465997d2cc2c7dd")]
+>>>>>>> aa4b2b3d9855a139ae7bee8010dc193a7c4bed63
 [assembly: System.Reflection.AssemblyProductAttribute("menuMatematic_ArturShakirov_PereRipoll")]
 [assembly: System.Reflection.AssemblyTitleAttribute("menuMatematic_ArturShakirov_PereRipoll")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
