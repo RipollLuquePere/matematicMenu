@@ -121,7 +121,11 @@ do
                "║     ----------------------     ║\n" +
                "║     \x1b[31m0. SORTIR\x1b[30m                  ║\n" +
                "║                                ║\n" +
+<<<<<<< HEAD
                "╚════════════════════════════════╝\n\x1b[0m";
+=======
+               "╚════════════════════════════════╝\n\x1b[0m" ;
+>>>>>>> main
 
 
         return menu;
@@ -204,7 +208,11 @@ do
 
     static string Mcm(int num1, int num2)
     {
+<<<<<<< HEAD
         int mcm = 0, contador;
+=======
+        int mcm = 0, contador; 
+>>>>>>> main
         string resultat = "\nMínim comú multiple: ";
 
         contador = num1 * num2;
